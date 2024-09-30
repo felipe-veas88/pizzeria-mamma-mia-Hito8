@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.25rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+  .btn-sm {
+    font-size: 0.8rem;
+  }
+}
+
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.App > *:not(.content) {
+  width: 100%;
+}
